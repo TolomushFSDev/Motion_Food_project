@@ -1,10 +1,21 @@
 import React from 'react';
-import './Header.scss'
+import '../style/header/Header.scss'
+import {NavLink, Link} from "react-router-dom";
+import logo from '../../images/logo.svg'
+
 const Header = () => {
     return (
-        <div>
-            <h1 className="title">Food store</h1>
-        </div>
+      <header>
+<div className="logo">
+    <Link><img src={logo} alt=""/></Link>
+</div>
+<div className="menu-right">
+
+
+
+
+</div>
+      </header>
     );
 };
 
