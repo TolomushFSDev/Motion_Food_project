@@ -1,27 +1,22 @@
-import Header from "./Components/Header/Header";
-import Hero from "./Components/Hero/Hero";
-import * as PropTypes from "prop-types";
-import {Route} from "react-router-dom";
-
-
-function Routes(props) {
-  return null;
-}
-
-Routes.propTypes = {children: PropTypes.node};
+import Header from "./components/Header/Header";
+import {Routes, Route} from "react-router-dom";
+import Menu from "./pages/Menu";
+import Stock from "./pages/Stock";
+import AboutUs from "./pages/AboutUs";
+import Contacts from "./pages/Contacts";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
       <div>
-    <Hero/>
+    <Header/>
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/popular" element={<Menu/>}/>
-      <Route path="/top-rated" element={<Stock/>}/>
-      <Route path="/upcoming" element={<AboutUs/>}/>
-      <Route path="/now-playing" element={<Contacts/>}/>
-
+      <Route path="/" element={<Menu/>}/>
+      <Route path="/stock" element={<Stock/>}/>
+      <Route path="/aboutUs" element={<AboutUs/>}/>
+      <Route path="/contacts" element={<Contacts/>}/>
     </Routes>
+        <Footer/>
   </div>
 
   );
