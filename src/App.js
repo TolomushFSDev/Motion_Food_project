@@ -7,18 +7,19 @@ import Contacts from "./pages/Contacts";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-      <div>
-    <Header/>
-    <Routes>
-      <Route path="/" element={<Menu/>}/>
-      <Route path="/stock" element={<Stock/>}/>
-      <Route path="/aboutUs" element={<AboutUs/>}/>
-      <Route path="/contacts" element={<Contacts/>}/>
-    </Routes>
-        <Footer/>
-  </div>
+    return (
+        <div>
+            <Header/>
+            <Routes>
+                <Route path="/" element={<Menu/>}/>
+                <Route path="/stock" element={<Stock/>}/>
+                <Route path="/aboutUs" element={<AboutUs/>}/>
+                <Route path="/contacts" element={<Contacts/>}/>
+            </Routes>
+            <Footer/>
+        </div>
 
-  )};
+    )
+};
 
 export default App;
