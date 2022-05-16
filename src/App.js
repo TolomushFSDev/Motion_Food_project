@@ -1,3 +1,4 @@
+
 import Header from "./components/Header/Header";
 import {Routes, Route} from "react-router-dom";
 import Menu from "./pages/Menu";
@@ -19,7 +20,6 @@ function App() {
         <Footer/>
   </div>
 
-  );
-}
+  )};
 
 export default App;
